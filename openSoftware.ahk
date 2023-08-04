@@ -19,10 +19,6 @@ if !(ProcessExist("QQScreenShot.exe"))
 if !(ProcessExist("TrayS.exe"))
     Run "D:\tools\TrayS\TrayS.exe"
 
-;clash-core
-if !(ProcessExist("clash.exe"))
-    start_clash()
-
 ; ;V2rayN
 ; if !(ProcessExist("v2rayN.exe"))
 ;     Run "D:\tools\v2rayN\v2rayN.exe"
