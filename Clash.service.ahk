@@ -1,15 +1,7 @@
 ;; 启动clash函数
 start_clash() {
     if !(ProcessExist("clash.exe"))
-        run('*RunAs D:\Program\Scoop\apps\powershell-preview\current\pwsh.exe C:\Users\jhx_pc\.config\clash\Scrips\Start_Clash.ps1', , "Hide", &ClashPID)
-    ; MsgBox(ClashPID)
-    if(ProcessExist("clash.exe")) {
-        Sleep(500)
-        if (ProcessExist(ClashPID)) {
-            ProcessClose(ClashPID) ; 关闭启动的pwsh进程
-            ; MsgBox("closed: " . ClashPID, "start_clash")
-        }
-    }
+        Run('*RunAs D:\Program\Scoop\shims\clash.exe -d C:\Users\jhx_pc\.config\clash\', , "Hide", &ClashPID)
 }
 
 ;; 关闭clash函数
@@ -28,5 +20,5 @@ sub_dl() {
 
 ;; 更新GeoX文件函数
 Update_GeoX() {
-    run('D:\Program\Scoop\apps\powershell-preview\current\pwsh.exe C:\Users\jhx_pc\.config\clash\Scrips\Update_Geox.ps1', , "Hide", &Update_GeoX_PID)
+    Run('D:\Program\Scoop\apps\powershell-preview\current\pwsh.exe C:\Users\jhx_pc\.config\clash\Scrips\Update_Geox.ps1', , "Hide", &Update_GeoX_PID)
 }
