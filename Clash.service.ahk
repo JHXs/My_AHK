@@ -20,5 +20,17 @@ sub_dl() {
 
 ;; 更新GeoX文件函数
 Update_GeoX() {
-    Run('D:\Program\Scoop\apps\powershell-preview\current\pwsh.exe C:\Users\jhx_pc\.config\clash\Scrips\Update_Geox.ps1', , "Hide", &Update_GeoX_PID)
+    ; 定义变量
+    secret := "ikunjihaha"
+    controllerApi := "127.0.0.1:8090"
+    ; 初始化HTTP请求对象
+    http := ComObject("WinHttp.WinHttpRequest.5.1")
+    ; 设置HTTP方法和目标URL
+    http.Open("POST", "http://" controllerApi "/configs/geo", false)
+    ; 设置自定义请求头
+    http.SetRequestHeader("Authorization", "Bearer " secret)
+    ; 发送请求
+    http.Send()
+    ; 关闭HTTP请求对象
+    http := ""
 }
