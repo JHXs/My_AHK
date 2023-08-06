@@ -23,6 +23,6 @@ if !(ProcessExist("TrayS.exe"))
 ; if !(ProcessExist("v2rayN.exe"))
 ;     Run "D:\tools\v2rayN\v2rayN.exe"
 
-; ;clash
-; if !(ProcessExist("Clash Verge.exe"))
-;     Run "D:\Program\Scoop\apps\clash-verge\current\Clash Verge.exe"
+;clash
+if !(ProcessExist("Clash Verge.exe"))
+    Run "C:\Users\jhx_pc\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Clash Verge"
