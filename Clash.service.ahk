@@ -40,6 +40,9 @@ Update_GeoX(secret) {
     ; 关闭HTTP请求对象
     http := ""
 }
+MyTimer() {
+    Update_GeoX("ikunjihaha")
+}
 
 ; 重载配置文件
 relad_config(secret) {
