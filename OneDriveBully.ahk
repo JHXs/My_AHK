@@ -7,8 +7,8 @@
 
 bully() {
     TimeString := FormatTime(A_Now, "yyyyMMdd-HHmmss")
-    FileName := "F:\OneDrive\OneDriveBully_SyncTempFile-*.txt"
-    NewFileName := "F:\OneDrive\OneDriveBully_SyncTempFile-" . TimeString . ".txt"
+    FileName := "D:\Library\OneDrive\OneDriveBully_SyncTempFile-*.txt"
+    NewFileName := "D:\Library\OneDrive\OneDriveBully_SyncTempFile-" . TimeString . ".txt"
     FileMove FileName, NewFileName
     return
 }
@@ -19,4 +19,5 @@ onebully(ThisHotkey) {
     bully()
 }
 
+SetTimer(bully, 30 * 60 * 1000) ; 设置每30min自动同步onedrive，也可在桌面手动使用`Ctr`+`Shit`+`s`同步(热键定义在OneDriveBully.ahk中)
 ; bully()
