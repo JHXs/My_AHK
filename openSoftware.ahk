@@ -24,7 +24,7 @@ if !(ProcessExist("Listary.exe"))
 
 ;clash
 if !(ProcessExist("Clash Verge.exe"))
-    run "C:\Users\ikun.ji\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Clash Verge"
+    run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Clash Verge\Clash Verge"
 
 ;OneDrive
 if !(ProcessExist("OneDrive.exe"))
@@ -33,3 +33,4 @@ if !(ProcessExist("OneDrive.exe"))
 ;ClickMonitorDDC
 if !(ProcessExist("ClickMonitorDDC.exe"))
     run "C:\Users\ikun.ji\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\ClickMonitorDDC"
+
