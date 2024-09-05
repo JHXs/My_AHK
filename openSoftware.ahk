@@ -30,7 +30,3 @@ if !(ProcessExist("Clash Verge.exe"))
 if !(ProcessExist("OneDrive.exe"))
     run "D:\Library\appLinks\OneDrive"
 
-;ClickMonitorDDC
-if !(ProcessExist("ClickMonitorDDC.exe"))
-    run "C:\Users\ikun.ji\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\ClickMonitorDDC"
-
