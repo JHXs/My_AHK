@@ -24,7 +24,7 @@ if !(ProcessExist("Listary.exe"))
 
 ;clash
 if !(ProcessExist("Clash Verge.exe"))
-    run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Clash Verge\Clash-Verge"
+    run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Clash Verge\Clash Verge"
 
 ; ;OneDrive
 if !(ProcessExist("OneDrive.exe"))
