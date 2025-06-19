@@ -7,8 +7,8 @@
 
 bully() {
     TimeString := FormatTime(A_Now, "yyyyMMdd-HHmmss")
-    FileName := "D:\Library\OneDrive\OneDriveBully_SyncTempFile-*.txt"
-    NewFileName := "D:\Library\OneDrive\OneDriveBully_SyncTempFile-" . TimeString . ".txt"
+    FileName := "D:\OneDrive\OneDriveBully_SyncTempFile-*.txt"
+    NewFileName := "D:\OneDrive\OneDriveBully_SyncTempFile-" . TimeString . ".txt"
     FileMove FileName, NewFileName
     return
 }

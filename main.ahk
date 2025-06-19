@@ -7,4 +7,3 @@
 #Include openSoftware.ahk
 #Include HotStringLib.ahk
 #Include OneDriveBully.ahk
-#Include Update_Geox.ahk
